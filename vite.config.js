@@ -112,7 +112,7 @@ export default defineConfig(({ command }) => {
         configureServer(server) {
           server.middlewares.use((req, res, next) => {
             if (req.url === '/ds') {
-              res.writeHead(302, { Location: 'https://discord.gg/ZBef7HnAeg' });
+              res.writeHead(302, { Location: 'https://discord.gg/tKm2FP9kT7' });
               res.end();
             } else {
               next();
