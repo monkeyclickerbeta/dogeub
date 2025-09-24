@@ -16,7 +16,7 @@ export const resetInstance = () => {
 };
 
 export const ckOff = () => {
-  if (document.title.includes('v5-')) return;
+  if (document.title.includes('v2-')) return;
   const op = JSON.parse(localStorage.options || '{}');
   import('./config.js').then(({ meta }) => {
     const { tabName: t, tabIcon: i } = op;
